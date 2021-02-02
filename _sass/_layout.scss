@@ -32,8 +32,8 @@ header, main {
     position: relative;
     margin-left: 1rem;
     margin-right: 1rem;
-    flex: 1 1 10rem
-}
+    flex: 1 1 10rem;
+    }
 
 @supports (display:grid) {
     .card {
@@ -82,8 +82,8 @@ header, main {
 .card {
   //min-height: 100%;
   background: white;
-  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
-  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
   //display: flex;
   //flex-direction: column;
   text-decoration: none;
@@ -121,17 +121,17 @@ header, main {
 .card .meta {
    padding: 2rem;
    display: flex;
-  
   flex: 1;
   justify-content: space-between;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .post {
 	background: white;
 	padding: 2rem 3rem;
-	-webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
-  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+	-webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
 	
 }
 

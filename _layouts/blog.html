@@ -6,9 +6,9 @@ title: Notes
 <div class="grid">
 
   {% for post in site.posts %}
-  
+
     <article role="article" class="card">
-	    <div class="meta">
+	    <div onclick="window.location.href = this.getElementsByTagName('a')[0].href;" class="meta">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a></h2>
@@ -21,4 +21,3 @@ title: Notes
   {% endfor %}
   
    </div>
-
