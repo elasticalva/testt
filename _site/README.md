@@ -19,6 +19,16 @@ _includes/navigation.html renders the files in the pages folder
 to add a tab add a file in _pages and add it to the navigation.html
 
 
+
+
+
+
+
+
+
+
+tags not working on gh pages
+tags from back numbers not showing in list
 related posts under each post
 
 categories tags and search tab in nav

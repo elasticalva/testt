@@ -3,7 +3,7 @@ layout: project
 title: Project Two
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 summary: Lorem ipsum dolor sit amet, consectetur.
-category: Front-end development
+category: end
 tags: [css]
 ---
 
