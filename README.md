@@ -29,7 +29,8 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 tags not working on gh pages
 
+stylize and write copy for back numbers
+
 related posts under each post
 
-categories tags and search tab in nav
 black and white colors on beats
