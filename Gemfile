@@ -6,3 +6,4 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-git_metadata'
 gem "kramdown-parser-gfm"
+gem "github-pages"
