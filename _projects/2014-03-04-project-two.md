@@ -3,7 +3,6 @@ layout: project
 title: Project Two
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 summary: Lorem ipsum dolor sit amet, consectetur.
-category: end
 tags: [css]
 ---
 

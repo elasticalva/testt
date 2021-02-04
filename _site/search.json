@@ -6,21 +6,21 @@
         "tags"     : "pedito",
         "url"      : "/2020/10/10/twitter-analysis",
         "date"     : "2020-10-10 00:00:00 +0200",
-        "description" : ""
+        "description" : "Coffee"
       } ,
     
       {
         "title"    : "LAPD Crime Analysis",
-        "category" : "Violent and Property Crimes",
-        "tags"     : "dinam",
+        "category" : "",
+        "tags"     : "caca",
         "url"      : "/2020/06/10/crime-analysis",
         "date"     : "2020-06-10 00:00:00 +0200",
-        "description" : ""
+        "description" : "Coffee"
       } ,
     
       {
         "title"    : "Project example",
-        "category" : "Good Times, More Brew",
+        "category" : "",
         "tags"     : "pedo",
         "url"      : "/2020/02/15/project-beeatch",
         "date"     : "2020-02-15 00:00:00 +0100",
@@ -29,7 +29,7 @@
     
       {
         "title"    : "Test",
-        "category" : "Twitter",
+        "category" : "",
         "tags"     : "css",
         "url"      : "/2020/02/13/test",
         "date"     : "2020-02-13 00:00:00 +0100",
@@ -57,7 +57,7 @@
     
       {
         "title"    : "Project Two",
-        "category" : "end",
+        "category" : "",
         "tags"     : "css",
         "url"      : "/projects/project-two",
         "date"     : "2014-03-04 00:00:00 +0100"
@@ -65,7 +65,7 @@
     
       {
         "title"    : "Project Three",
-        "category" : "Logo design, Branding",
+        "category" : "",
         "tags"     : "culo",
         "url"      : "/projects/project-three",
         "date"     : "2016-04-05 00:00:00 +0200"

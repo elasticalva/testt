@@ -3,7 +3,6 @@ layout: project
 title: Project Three
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 summary: Lorem ipsum dolor sit amet, consectetur.
-category: Logo design, Branding
 tags: [culo]
 ---
 

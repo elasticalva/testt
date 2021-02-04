@@ -1,9 +1,9 @@
 ---
 layout: project
 title: LAPD Crime Analysis
+description: Coffee
 summary: Data Exploration
-category: Violent and Property Crimes
-tags: [dinam]
+tags: [caca]
 ---
 
 South LA revisited with an OLS, Elastic Net, and Random Forest Regression.

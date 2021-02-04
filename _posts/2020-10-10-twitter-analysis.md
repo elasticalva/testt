@@ -2,6 +2,7 @@
 layout: project
 title: Airline Twitter Analysis
 summary: Data Exploration
+description: Coffee
 tags: [pedito]
 ---
 
