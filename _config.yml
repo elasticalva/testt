@@ -19,7 +19,7 @@ social:
   name:
   links:
   
-permalink: pretty
+permalink: /:title
 
 baseurl: ""
 
