@@ -27,8 +27,8 @@ no_toc: true
   window.simpleJekyllSearch = new SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+      json: '{{ site.baseurl }}/search.json',
+      searchResultTemplate: '<li><a href="{{ site.baseurl }}{url}?query={query}" title="{desc}">{title}</a></li>',
       noResultsText: 'No results found',
       limit: 10,
       fuzzy: false,
@@ -123,7 +123,7 @@ page_tags
   # finally, print the list item!
   {% endcomment %}
   {% for tagged in all_tagged %}
-    <li><a href="{{ tagged.url }}">{{ tagged.title }}</a></li>
+    <li><a href="{{ site.baseurl }}{{ tagged.url }}">{{ tagged.title }}</a></li>
   {% endfor %}
 
   </ul>

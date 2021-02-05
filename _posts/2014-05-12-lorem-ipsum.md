@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Simply dummy text
 description: Cheleando Y Batallando
 summary: Cheleando Y Batallando
