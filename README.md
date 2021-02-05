@@ -25,6 +25,8 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 ghpages tags not working
 
+how many posts
+
 stylize and write copy for back numbers
 
 related posts under each post
