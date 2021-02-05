@@ -41,9 +41,9 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  tags:
+  tag:
     output: true
-    permalink: /tag/:name/ # optional
+    permalink: /tag/:name/
   pages:
     output: true
     permalink: /:name
