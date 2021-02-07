@@ -6,12 +6,12 @@ no_toc: true
 ---
 
 <main class="page-content" aria-label="Content">
-
+  <h1>What are you looking for?</h1>
   <div class="wrapper">
       <!-- Search Box DOM Elements -->
       <div class="search">
           <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" id="search-input" placeholder="Search posts by keyword ...">
+          <input type="text" id="search-input" placeholder="Search">
           <ul id="results-container"></ul>
       </div>
   </div>
@@ -39,7 +39,7 @@ no_toc: true
 
 
 
-<h1>Categories</h1>
+<h1>Categories:</h1>
 {% assign project_tags = "" | split: ',' %}
 {% assign post_tags = "" | split: ',' %}
 {% assign all_tags = "" | split: ',' %}
@@ -96,7 +96,7 @@ page_tags
 {% for tag in sortedtags %}
   {% assign all_tagged = "" | split: ',' %}
 
-  <h3 id="{{ tag }}"><b>{{ tag }}</b></h3>
+  <h1 style="text-transform: uppercase; font-size: 1.2rem;" id="{{ tag }}"><b>{{ tag }}</b></h1>
   <ul>
 
   {% comment %}

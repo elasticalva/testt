@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article role="article" class="post">
-<h1>Categories containing <b>{{page.tag}}</b></h1>
+<h1>Categories containing <i style="text-transform: uppercase;">{{page.tag}}</i></h1>
     <ul>
       {% for post in site.posts %}
       {% if post.tags contains page.tag %}

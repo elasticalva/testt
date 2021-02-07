@@ -9,12 +9,32 @@ a,a:visited {
   color: inherit;
 
   &:hover {
-    color: inherit;
+    color: red;
   }
 }
 
-h1, h2, h3, h4, h5, nav a {
+h3, h4, h5 {
 	font-weight: 500;
+}
+h1 {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: Libre Baskerville;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: quicksand;
+  font-size: 1.2rem;
+}
+
+nav a {
+  font-weight: 700;
 }
 
 blockquote {
@@ -62,4 +82,7 @@ pre {
 
 .date {
   opacity: 0.6;
-}
+  font-family: quicksand;
+  font-size: 1rem;
+  font-style: italic;
+  }
