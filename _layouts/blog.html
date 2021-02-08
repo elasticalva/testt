@@ -9,11 +9,11 @@ title: Cover
 
     <article role="article" class="card">
 	    <div onclick="window.location.href = this.getElementsByTagName('a')[0].href;" class="meta">
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
-      </a></h2>
-      <p>{{ post.summary }}</p>
-        <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time> 
+      </a></h1>
+      <h2>{{ post.summary }}</h2>
+    <h3></h3><time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></h3>
 	    </div>
   
     </article>
