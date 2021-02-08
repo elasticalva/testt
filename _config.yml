@@ -49,7 +49,7 @@ collections:
     permalink: /:year/:month/:day/:slug
   projects:
     output: true
-    permalink: /projects/:slug
+    permalink: /beats/:slug
   
 defaults:
   -

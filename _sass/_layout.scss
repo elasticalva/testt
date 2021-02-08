@@ -183,6 +183,9 @@ nav {
         li {
             display: inline-block;
         }
+        a.active {
+          color: #ff55ff !important;
+        }
     }
     a, a:visited {
         margin: 0.5rem;

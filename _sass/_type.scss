@@ -5,13 +5,36 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-a,a:visited {
-  color: inherit;
-
-  &:hover {
-    color: red;
-  }
+nav a {
+  font-weight: 900;
+  font-style: italic;
 }
+
+a {
+  color: inherit;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  opacity: 0.6;
+}
+
+
+
+
+
+
 
 h3, h4, h5 {
 	font-weight: 500;
@@ -31,10 +54,6 @@ h2 {
 p {
   font-family: quicksand;
   font-size: 1.2rem;
-}
-
-nav a {
-  font-weight: 700;
 }
 
 blockquote {
