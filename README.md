@@ -22,16 +22,10 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
-font size 16 14 (text / navbar / titles / alt)
-Title Montserrat 700
-Alt Libre Baskerville
-Normal Quicksand
-
 Simplify text associations and assignations please!!!!!!
 
 how many posts
 
-stylize and write copy for back numbers
 
 related posts under each post
 
@@ -47,5 +41,3 @@ repair accesibility on lighthouse chrome
 try to repair progresive web app in lighthouse
 
 ALL TAGS FROM BEATS HAVE TO BE FIRST IN POSTS!!!!!!!!!!!!!!
-
-delete query element from links

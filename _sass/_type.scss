@@ -1,8 +1,9 @@
 body {
   font-size: 1rem;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;;
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
 }
 
 nav a {
@@ -42,10 +43,10 @@ h1 {
 }
 
 h2 {
-  font-family: Libre Baskerville;
+  font-family: Libre Baskerville !important;
   font-size: 1.6rem;
-  font-weight: normal;
   opacity: 0.8;
+  font-weight: 400;
 }
 
 p {
