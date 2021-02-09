@@ -1,8 +1,99 @@
 html {
   box-sizing: border-box;
   margin:0; 
-  padding:0; 
+  padding:0;
+  
+  --bg: #edf2f7;
+    --headings: #07f;
+    --text: #495057;
 }
+
+html[data-theme='dark'] {
+  --bg: #495057;
+  --headings: #39f;
+  --text: #edf2f7;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.container {
+  background-color: var(--bg-secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--headings);
+}
+
+p, strong, b, em, span, code, small {
+  color: var(--text);
+}
+
+
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 650ms !important;
+    transition-delay: 0 !important;
+}
+
+.switch {
+  border-radius: 6px;
+  background: grey;
+  border: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 8px;
+  transition: all 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+#text {
+  position: relative;
+}
+#check {
+  display: none;
+}
+#check:checked + #text:after {
+  content: "Light";
+  position: absolute;
+  left: 0;
+  background: grey;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *, *:before, *:after {
   box-sizing: inherit;
 }

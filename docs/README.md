@@ -21,11 +21,11 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
+lateral size
 
 Simplify text associations and assignations please!!!!!!
 
 how many posts
-
 
 related posts under each post
 
