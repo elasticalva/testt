@@ -12,26 +12,201 @@ html {
 body {
     background-color: #edf2f7;
     color: #333333;
+    transition: 0.4s ease-in-out;
 }
 
-.oscuro {
-  background-color: #333333;
-  color: #edf2f7;
-}
 
-#btn-light-dark::after {
-  content: '🌞';
-}
 
-body.oscuro #btn-light-dark::after {
-  content: '🌒';
-}
 
-@media (prefers-color-scheme: dark) {
+
+
+
+
+
+
+
+
+
+[data-theme="dark"] {
   body {
-      color:#333333;
-      background:#edf2f7
-  }}
+    background-color: #333333;
+    color: #333333;
+    transition: 0.4s ease-in-out;
+}
+nav {
+  ul {
+      a.active {
+        color: #73E6AC !important;
+        font-weight: 900 !important;
+      }
+  }
+  a, a:visited {
+    color: #999999 !important;
+  }
+}
+
+footer {
+  color: #999999 !important;
+}
+
+
+#search-input {
+border-radius: 1px;
+border-width: 1px;
+color: #454545;
+padding: 5px;
+font-size: 1rem;
+border: 1px solid grey;
+width: 30%;
+background: #edf2f7;
+}
+.post {
+	background-color: #808080;
+  color: #333333;
+	padding: 2rem;
+	-webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
+  p {
+    color: #edf2f7;
+  }
+  h2 {
+    color: #edf2f7;  
+  }
+  .date {
+    color: #edf2f7;  
+    }
+    a {
+      color: #cccccc;
+    }
+}
+
+
+.card:nth-child(4n + 1) {
+  background: #808080;
+  color: #333333;
+  h2 {
+    color: #cccccc;  
+  }
+  .date {
+    color: #cccccc;  
+    }
+  }
+.card:nth-child(4n + 2) {
+  background: #808080;
+  color: #333333;
+  h2 {
+    color: #cccccc;  
+  }
+  .date {
+    color: #cccccc;  
+    }
+  }
+.card:nth-child(4n + 3) {
+  background: #808080;
+  color: #333333;
+  h2 {
+    color: #cccccc;  
+  }
+  .date {
+    color: #cccccc;  
+    }
+  }
+.card:nth-child(4n + 4) {
+  background: #808080;
+  color: #333333;
+  h2 {
+    color: #cccccc;  
+  }
+  .date {
+    color: #cccccc;  
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  top: 3px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999999;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: -0.2px;
+  bottom: 0px;
+  background-color: #eee;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+input:checked + .slider {
+  background-color: #BFBFBF;
+}
+input:focus + .slider {
+  box-shadow: 0 0 0 #BFBFBF;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
 
 
 
@@ -89,26 +264,45 @@ header, main {
 }
 
 .card:nth-child(6n + 1) {
-  background: #ef7d4d;
+  background: #ef7d4d; 
 }
 
 .card:nth-child(7n +1) {
   background: #fac14e;
 }
 
-
 .card:nth-child(4n + 1) {
-  background: #fac14e;
+  background: #73E6AC ;
 }
 .card:nth-child(4n + 2) {
-  background: #fbcfb9;
+  background: #FF8095;
 }
 .card:nth-child(4n + 3) {
-  background: #ef7d4d;
+  background: #FFD480;
 }
 .card:nth-child(4n + 4) {
-  background: #96d0c3;
+  background: #80D4FF;
 }
+
+
+
+
+/*
+.card:nth-child(4n + 1) {
+  background: #b3b3b3;
+}
+.card:nth-child(4n + 2) {
+  background: #999999;
+}
+.card:nth-child(4n + 3) {
+  background: #808080;
+}
+.card:nth-child(4n + 4) {
+  background: #666666;
+}
+
+*/
+
 
 .card {
   //min-height: 100%;
@@ -168,7 +362,8 @@ header, main {
 }
 
 .post {
-	background: white;
+	background-color: white;
+  color: #666666;
 	padding: 2rem;
 	-webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.1);
@@ -217,7 +412,8 @@ nav {
             display: inline-block;
         }
         a.active {
-          color: #ff55ff !important;
+          color: #73E6AC !important;
+          font-weight: 900 !important;
         }
     }
     a, a:visited {

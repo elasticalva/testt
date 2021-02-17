@@ -19,9 +19,20 @@ _includes/navigation.html renders the files in the pages folder
 to add a tab add a file in _pages and add it to the navigation.html
 
 
+random css
+http://jsfiddle.net/jeAsd/7/
 
+http://nthmaster.com/
 
-lateral size
+switch that works
+https://jennieablog.github.io/2020/06/20/coding-a-theme-switch.html
+
+random color card
+https://hookagency.com/website-color-schemes/
+https://www.quicksprout.com/trending-website-color-schemes/
+https://designshack.net/articles/trends/best-website-color-schemes/
+
+delete beats
 
 Simplify text associations and assignations please!!!!!!
 
@@ -40,4 +51,4 @@ repair accesibility on lighthouse chrome
 
 try to repair progresive web app in lighthouse
 
-ALL TAGS FROM BEATS HAVE TO BE FIRST IN POSTS!!!!!!!!!!!!!!
+filter by songs styles or artist

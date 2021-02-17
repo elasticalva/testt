@@ -1,20 +1,24 @@
-  const btnDarkLight = (btn) => {
-    const btnElem = document.querySelector(btn);
-  
-    const setText = () => {
-      const text = document.body.classList.contains('oscuro') ? '🌙' : '☀️';
-      btnElem.textContent = text;
-    }
-  
-    document.addEventListener("click", (e) => {
-      if (e.target.matches(btn)) {
-        document.body.classList.toggle('oscuro');
-        setText();
-      }
-    });
-  
-    setText();
-  
+ // This function runs every time the switch is toggled.
+ function changeTheme(){
+  const theme_switch = document.getElementById("theme-switch");
+  if (theme_switch.checked) {
+    document.documentElement.setAttribute("data-theme","dark");
+    // Add the ff. line to write to memory.
+    localStorage.setItem("my-theme","dark");
   }
-  
-  btnDarkLight("#btn-light-dark");
+  else {
+    document.documentElement.removeAttribute("data-theme")
+    // Add the ff. line to write to memory.
+    localStorage.setItem("my-theme",null);
+  }
+}
+
+// Check local storage every time html is loaded to know which theme to use.
+if (localStorage.getItem("my-theme")==="dark") {
+  // Use dark theme.
+  document.documentElement.setAttribute("data-theme","dark");
+}
+else {
+  // Use default theme.
+  document.documentElement.removeAttribute("data-theme")
+}
