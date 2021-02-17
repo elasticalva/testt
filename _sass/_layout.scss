@@ -30,20 +30,27 @@ body {
 [data-theme="dark"] {
   body {
     background-color: #333333;
-    color: #333333;
+    color: #999999;
     transition: 0.4s ease-in-out;
 }
 nav {
-  ul {
+  
       a.active {
-        color: #73E6AC !important;
-        font-weight: 900 !important;
+        color: #FF8095;
+        opacity: 1;
+        &:hover {
+          opacity: 0.7;
+        }
       }
-  }
-  a, a:visited {
-    color: #999999 !important;
+      a, a:visited {
+        
+      opacity: 1;
+  &:hover {
+    opacity: 0.7;
   }
 }
+  }
+  
 
 footer {
   color: #999999 !important;
@@ -51,15 +58,15 @@ footer {
 
 
 #search-input {
-border-radius: 1px;
-border-width: 1px;
-color: #454545;
-padding: 5px;
-font-size: 1rem;
-border: 1px solid grey;
-width: 30%;
-background: #edf2f7;
-}
+  border-radius: 1px;
+  border-width: 1px;
+  color: #333333;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid grey;
+  width: 30%;
+  background: #cccccc;
+ }
 .post {
 	background-color: #808080;
   color: #333333;
@@ -85,40 +92,40 @@ background: #edf2f7;
   background: #808080;
   color: #333333;
   h2 {
-    color: #cccccc;  
+    color: #333333;  
   }
   .date {
-    color: #cccccc;  
+    color: #333333;  
     }
   }
 .card:nth-child(4n + 2) {
   background: #ff80958e;
-  color: #444444;
+  color: #333333;
   h2 {
-    color: #cccccc;  
+    color: #333333;  
   }
   .date {
-    color: #cccccc;  
+    color: #333333;  
     }
   }
 .card:nth-child(4n + 3) {
   background: #ffd5808e;
-  color: #444444;
+  color: #333333;
   h2 {
-    color: #cccccc;  
+    color: #333333;  
   }
   .date {
-    color: #cccccc;  
+    color: #333333;  
     }
   }
 .card:nth-child(4n + 4) {
   background: #808080;
   color: #333333;
   h2 {
-    color: #cccccc;  
+    color: #333333;  
   }
   .date {
-    color: #cccccc;  
+    color: #333333;  
     }
   }
 
@@ -151,7 +158,7 @@ background: #edf2f7;
   top: 3px;
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 39px;
   height: 20px;
 }
 /* Hide default HTML checkbox */
@@ -168,7 +175,7 @@ background: #edf2f7;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #cccccc;
+  background-color: #FFD480;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -184,7 +191,7 @@ background: #edf2f7;
   transition: 0.4s ease-in-out;
 }
 input:checked + .slider {
-  background-color: #BFBFBF;
+  background-color: #FF8095;
 }
 input:focus + .slider {
   box-shadow: 0 0 0 #BFBFBF;
@@ -272,36 +279,46 @@ header, main {
 }
 
 .card:nth-child(4n + 1) {
-  background: #cccccc ;
-}
+  background: #cccccc;
+  color: #666666;
+  h2 {
+    color: #666666;  
+  }
+  .date {
+    color: #666666;  
+    }
+  }
 .card:nth-child(4n + 2) {
   background: #FF8095;
-}
+  color: #FFD480;
+  h2 {
+    color: #FFD480;  
+  }
+  .date {
+    color: #FFD480;  
+    }
+  }
+
 .card:nth-child(4n + 3) {
   background: #FFD480;
-}
+  color: #FF8095;
+  h2 {
+    color: #FF8095;  
+  }
+  .date {
+    color: #FF8095;  
+    }
+  }
 .card:nth-child(4n + 4) {
   background: #cccccc;
-}
-
-
-
-
-/*
-.card:nth-child(4n + 1) {
-  background: #b3b3b3;
-}
-.card:nth-child(4n + 2) {
-  background: #999999;
-}
-.card:nth-child(4n + 3) {
-  background: #808080;
-}
-.card:nth-child(4n + 4) {
-  background: #666666;
-}
-
-*/
+  color: #666666;
+  h2 {
+    color: #666666;  
+  }
+  .date {
+    color: #666666;  
+    }
+  }
 
 
 .card {
@@ -344,9 +361,9 @@ header, main {
 }
 
 .card time {
-  font-family: Quicksand;
+  font-family: Roboto;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .05em;
 
@@ -405,15 +422,18 @@ nav {
         list-style: none !important;
         padding: 0;
         text-align: right;
-        font-family: Quicksand;
+        font-family: roboto;
         font-size: 1rem;
       
         li {
             display: inline-block;
         }
         a.active {
-          color: #73E6AC !important;
-          font-weight: 900 !important;
+          color: #FF8095;
+          opacity: 1;
+          &:hover {
+            opacity: 0.7;
+          }
         }
     }
     a, a:visited {
@@ -422,7 +442,10 @@ nav {
 	    text-transform: uppercase;
 	    color: inherit;
 	    letter-spacing: .05em;
-	    //opacity: 0.6;
+	    opacity: 0.7;
+      &:hover {
+        opacity: 0.4;
+      }
     }
 }
 

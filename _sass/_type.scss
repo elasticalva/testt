@@ -7,13 +7,8 @@ body {
 }
 
 nav a {
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
 }
 
 a {
@@ -100,7 +95,7 @@ pre {
 
 .date {
   opacity: 0.6;
-  font-family: quicksand;
+  font-family: Roboto;
   font-size: 1rem;
   font-style: italic;
   }
