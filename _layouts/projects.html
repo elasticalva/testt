@@ -1,26 +1,20 @@
 ---
 layout: default
-title:  Beats
+title: Beats
 permalink: /beats/
 no_toc: true
 ---
-
 <div class="grid">
-
   {% for project in site.projects reversed %}
-  
-    <article role="article" class="card">
-	    <div onclick="window.location.href = this.getElementsByTagName('a')[0].href;" class="meta">
+  <article role="article" class="card">
+    <div onclick="window.location.href = this.getElementsByTagName('a')[0].href;" class="meta">
       <h1><a href="{{ site.baseurl }}{{ project.url }}">
-        {{ project.title }}
-      </a></h1>
+          {{ project.title }}
+        </a></h1>
       <h2>{{ project.summary }}</h2>
-        <h3></h3><time class="date" datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%B %-d, %Y" }}</time></h3>
-	    </div>
-  
-    </article>
-    
-    
+      <h3></h3><time class="date" datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%B %-d, %Y"
+        }}</time></h3>
+    </div>
+  </article>
   {% endfor %}
-  
 </div>

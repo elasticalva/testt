@@ -1,130 +1,97 @@
 ---
 layout: page
-title:  Back Numbers
+title: Back Numbers
 permalink: /backnumbers/
 no_toc: true
 ---
-
 <main class="page-content" aria-label="Content">
   <h1>What are you looking for?</h1>
   <div class="wrapper">
-      <!-- Search Box DOM Elements -->
-      <div class="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" id="search-input" placeholder="Search">
-          <ul id="results-container"></ul>
-      </div>
+    <!-- Search Box DOM Elements -->
+    <div class="search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="results-container"></ul>
+    </div>
   </div>
 </main>
-     
-
 <!-- Import SimpleJekyllSearch scripts by CDN -->
-<script
-  src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.js"></script>
-
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.js"></script>
 <!-- Initialize SimpleJekyllSearch Plugin -->
 <script>
   window.simpleJekyllSearch = new SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-      noResultsText: 'No results found',
-      limit: 10,
-      fuzzy: false,
-      exclude: ['Welcome']
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
   })
 </script>
-
-
-
-
 <h1>Categories:</h1>
 {% assign project_tags = "" | split: ',' %}
 {% assign post_tags = "" | split: ',' %}
 {% assign all_tags = "" | split: ',' %}
-
 {% comment %}
 # get all post tags
 {% endcomment %}
-
-
 {% capture post_tags %}
-  {% for tag in site.tags %}
-    {{ tag[0] }}
-  {% endfor %}
+{% for tag in site.tags %}
+{{ tag[0] }}
+{% endfor %}
 {% endcapture %}
 {% assign tags = post_tags | strip_newlines | split:' ' %}
-
 {% comment %}
 # get all unique page tags
 {% endcomment %}
-
 {%- for page in site.projects -%}
-  {% assign page_tags = page_tags | concat:page.tags %}
+{% assign page_tags = page_tags | concat:page.tags %}
 {%- endfor -%}
-
 {%- assign post_tags = post_tags | remove: "\n" | split: " " -%}
-
-
 {% comment %}
 # debug prints
-
 post_tags
 {{post_tags | jsonify}}
-
 page_tags
 {{page_tags | jsonify}}
-
 {% endcomment %}
-
 {% comment %}
 # concat was injecting line breaks here, so had to hammer
 # it the old fashioned way to avoid concat
 {% endcomment %}
-
 {% for tag in post_tags %}
-  {% assign all_tags = all_tags | push: tag %}
+{% assign all_tags = all_tags | push: tag %}
 {% endfor %}
-
 {% for tag in page_tags %}
-  {% assign all_tags = all_tags | push: tag %}
+{% assign all_tags = all_tags | push: tag %}
 {% endfor %}
-
 {% assign sortedtags = all_tags | uniq | sort%}
-
 {% for tag in sortedtags %}
-  {% assign all_tagged = "" | split: ',' %}
-
-  <h1 style="text-transform: uppercase; font-size: 1.2rem;" id="{{ tag }}"><b>{{ tag }}</b></h1>
-  <ul>
-
+{% assign all_tagged = "" | split: ',' %}
+<h1 style="text-transform: uppercase; font-size: 1.2rem;" id="{{ tag }}"><b>{{ tag }}</b></h1>
+<ul>
   {% comment %}
   # combine posts and pages with this tag
   {% endcomment %}
-
   {% for post in site.tags[tag]%}
-    {% assign all_tagged = all_tagged | push: post %}
+  {% assign all_tagged = all_tagged | push: post %}
   {% endfor %}
-
   {% for page in site.projects %}
-    {% if page.tags contains tag %}
-      {% assign all_tagged = all_tagged | push: page %}
-    {% endif %}
+  {% if page.tags contains tag %}
+  {% assign all_tagged = all_tagged | push: page %}
+  {% endif %}
   {% endfor %}
-
   {% comment %}
   # sort by title
   {% endcomment %}
   {% assign all_tagged = all_tagged | sort: "title" %}
-
-
   {% comment %}
   # finally, print the list item!
   {% endcomment %}
   {% for tagged in all_tagged %}
-    <li><a href="{{ site.baseurl }}{{ tagged.url }}">{{ tagged.title }}</a></li>
+  <li><a href="{{ site.baseurl }}{{ tagged.url }}">{{ tagged.title }}</a></li>
   {% endfor %}
-
-  </ul>
+</ul>
 {% endfor %}

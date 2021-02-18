@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@800&family=Quicksand&family=Roboto:ital,wght@1,100;1,400;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@800&family=Quicksand&family=Roboto:ital,wght@1,100;1,400;1,700&display=swap");
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Quicksand' }
+  html {
+    font-family: "Quicksand";
+  }
 }
