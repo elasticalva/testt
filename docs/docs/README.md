@@ -24,9 +24,13 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
-fix navbar to right with mobile screen sizes
+fine tunning screen sizes
 
 add logo to left
+
+fine tunning mobile navbar size
+
+take a look on logo dimensions when navbar minimized.
 
 when scroll passed x minimize navbar (logominimized = home, and dark mode)
 
