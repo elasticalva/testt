@@ -24,18 +24,13 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
+fix navbar to right with mobile screen sizes
 
-navbar fixed posts under navbar
+add logo to left
 
-when scroll passed x minimize navbar (logo = home, and dark mode)
-
-different text size on nav active
-
-text color on back numbers
+when scroll passed x minimize navbar (logominimized = home, and dark mode)
 
 text size according to device
-
-shadow on dark mode
 
 random css
 http://jsfiddle.net/jeAsd/7/
@@ -64,3 +59,5 @@ repair accesibility on lighthouse chrome
 try to repair progresive web app in lighthouse
 
 filter by songs styles or artist
+
+mobile

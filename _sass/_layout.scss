@@ -41,6 +41,7 @@ main {
   margin-left: 1rem;
   margin-right: 1rem;
   flex: 1 1 10rem;
+  border-radius: 6px;
 }
 nav {
   position: fixed;
@@ -186,12 +187,15 @@ nav {
   cursor: pointer;
 }
 .post {
-  margin-top: 56px;
   background-color: white;
   color: #666666;
-  padding: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 15px;
   -webkit-box-shadow: 0 0.75rem 1.5rem #cccccc;
   box-shadow: 0 0.75rem 1.5rem #cccccc;
+  border-radius: 6px;
 }
 .card {
   transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -220,6 +224,48 @@ img {
   margin: 0.5rem 0;
 }
 //Mobile Mode
+@media only screen and (max-width: 5120px) {
+  nav {
+    ul {
+      margin-right: 42%;
+    }
+  }
+}
+@media only screen and (max-width: 4096px) {
+  nav {
+    ul {
+      margin-right: 40%;
+    }
+  }
+}
+@media only screen and (max-width: 3840px) {
+  nav {
+    ul {
+      margin-right: 39.4%;
+    }
+  }
+}
+@media only screen and (max-width: 3000px) {
+  nav {
+    ul {
+      margin-right: 36.5%;
+    }
+  }
+}
+@media only screen and (max-width: 2960px) {
+  nav {
+    ul {
+      margin-right: 36%;
+    }
+  }
+}
+@media only screen and (max-width: 2880px) {
+  nav {
+    ul {
+      margin-right: 36%;
+    }
+  }
+}
 @media only screen and (max-width: 2560px) {
   nav {
     ul {
@@ -269,6 +315,13 @@ img {
     }
   }
 }
+@media only screen and (max-width: 1194px) {
+  nav {
+    ul {
+      margin-right: 16%;
+    }
+  }
+}
 @media only screen and (max-width: 1152px) {
   nav {
     ul {
@@ -290,7 +343,14 @@ img {
     }
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 835px) {
+  nav {
+    ul {
+      margin-right: 2%;
+    }
+  }
+}
+@media only screen and (max-width: 809px) {
   nav {
     ul {
       margin-right: 2%;
