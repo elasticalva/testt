@@ -19,6 +19,24 @@ _includes/navigation.html renders the files in the pages folder
 to add a tab add a file in _pages and add it to the navigation.html
 
 
+
+
+
+
+
+
+navbar fixed posts under navbar
+
+when scroll passed x minimize navbar (logo = home, and dark mode)
+
+different text size on nav active
+
+text color on back numbers
+
+text size according to device
+
+shadow on dark mode
+
 random css
 http://jsfiddle.net/jeAsd/7/
 
@@ -32,17 +50,11 @@ https://hookagency.com/website-color-schemes/
 https://www.quicksprout.com/trending-website-color-schemes/
 https://designshack.net/articles/trends/best-website-color-schemes/
 
-delete beats
+delete beats WELL
 
 Simplify text associations and assignations please!!!!!!
 
 how many posts
-
-related posts under each post
-
-black and white colors on beats
-
-add featured post on top
 
 Stylize
 Architecture

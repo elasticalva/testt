@@ -41,15 +41,15 @@ main {
   margin-left: 1rem;
   margin-right: 1rem;
   flex: 1 1 10rem;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 nav {
   position: fixed;
   z-index: 1000;
   background-color: #edf2f7;
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  margin-top: -56px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   ul {
@@ -59,6 +59,7 @@ nav {
     text-align: right;
     font-family: roboto;
     font-size: 1rem;
+    white-space: nowrap;
     li {
       display: inline-block;
       margin-right: 0.5rem;
@@ -195,7 +196,7 @@ nav {
   padding-top: 15px;
   -webkit-box-shadow: 0 0.75rem 1.5rem #cccccc;
   box-shadow: 0 0.75rem 1.5rem #cccccc;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 .card {
   transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -359,18 +360,19 @@ img {
 }
 @media only screen and (max-width: 600px) {
   .post {
-  padding-top: 0.2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.card .meta {
-  padding: 1rem;
-}
-nav {
-  ul {
-    margin-right: 2%;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-}
+  .card .meta {
+    padding: 1rem;
+  }
+  nav {
+    bottom: 0; /* Position the navbar at the top of the page */
+    ul {
+      text-align: center;
+    }
+  }
 }
 //Dark Mode
 [data-theme="dark"] {
@@ -528,7 +530,7 @@ footer {
   text-align: center;
 }
 #search-input {
-  border-radius: 1px;
+  border-radius: 20px;
   border-width: 1px;
   color: #454545;
   padding: 5px;
@@ -560,3 +562,23 @@ footer {
   background: #fac14e;
 }
 */
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: -14px; /* if you want it vertically middle of the navbar. */
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+  opacity: 1 !important;
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
