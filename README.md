@@ -22,7 +22,9 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
+outline on links
 
+shadow with transparency
 
 fine tunning screen sizes
 
