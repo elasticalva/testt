@@ -403,8 +403,8 @@ img {
   }
   nav {
     background-color: #333333;
-    -webkit-box-shadow: 0 0.75rem 1.5rem #0000005b;
-    box-shadow: 0 0.75rem 1.5rem #0000005b;
+    -webkit-box-shadow: 0 -0.2rem 1rem #0000005b;
+    box-shadow: 0 -0.2rem 1rem #0000005b;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     a.active {
@@ -454,8 +454,8 @@ img {
     span {
       -webkit-box-shadow: 0 -4px 2px #0000005b;
       box-shadow: 0 4px 2px #0000005b;
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
     }
 
     &:hover {
@@ -481,7 +481,8 @@ img {
     text-shadow: 0 8px 4px #0000005b, 0 8px 4px #00000080;
   }
   .slider:hover::before {
-    -webkit-transition: 0.2s ease-in-out;
+    display: inline-block;
+    transform: translateX(20px) scale(1.1);
     transition: 0.2s ease-in-out;
     -webkit-box-shadow: 0 -8px 4px #0000005b;
     box-shadow: 0 8px 4px #0000005b;
@@ -579,6 +580,7 @@ input:checked + .slider:before {
 }
 
 .slider:hover::before {
+  transform: scale(1.1);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   -webkit-box-shadow: 0 -8px 4px #80808042;
