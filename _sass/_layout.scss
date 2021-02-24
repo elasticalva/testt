@@ -50,8 +50,8 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
   width: 100%; /* Full width */
   margin-top: -86px;
-  -webkit-box-shadow: 0 0.75rem 1.5rem #cccccc;
-  box-shadow: 0 0.75rem 1.5rem #cccccc;
+  -webkit-box-shadow: 0 0.75rem 1.5rem #80808042;
+  box-shadow: 0 0.75rem 1.5rem #80808042;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   ul {
@@ -143,8 +143,8 @@ nav {
 .card {
   //min-height: 100%;
   background: white;
-  -webkit-box-shadow: 0 0.75rem 1.5rem #cccccc;
-  box-shadow: 0 0.75rem 1.5rem #cccccc;
+  -webkit-box-shadow: 0 0.75rem 1.5rem #80808042;
+  box-shadow: 0 0.75rem 1.5rem #80808042;
   //display: flex;
   //flex-direction: column;
   text-decoration: none;
@@ -196,8 +196,8 @@ nav {
   padding-right: 30px;
   padding-bottom: 30px;
   padding-top: 15px;
-  -webkit-box-shadow: 0 0.75rem 1.5rem #cccccc;
-  box-shadow: 0 0.75rem 1.5rem #cccccc;
+  -webkit-box-shadow: 0 0.75rem 1.5rem #80808042;
+  box-shadow: 0 0.75rem 1.5rem #80808042;
   border-radius: 10px;
 }
 .card {
@@ -373,14 +373,19 @@ img {
     padding: 1rem;
   }
   nav {
+    
     bottom: 0; /* Position the navbar at the top of the page */
-    -webkit-box-shadow: 0 -0.2rem 1rem #999999;
-  box-shadow: 0 -0.2rem 1rem #999999;
+    -webkit-box-shadow: 0 -0.2rem 1rem #80808042;
+    box-shadow: 0 -0.2rem 1rem #80808042;
     ul {
+      margin-top: 20px;
       text-align: center;
     }
+    li {
+      height: 18px
+    }
     .emboss {
-      display:none;
+      display: none;
     }
     .burger {
       right: 8px;
@@ -398,8 +403,8 @@ img {
   }
   nav {
     background-color: #333333;
-    -webkit-box-shadow: 0 0.75rem 1.5rem #222222;
-    box-shadow: 0 0.75rem 1.5rem #222222;
+    -webkit-box-shadow: 0 0.75rem 1.5rem #0000005b;
+    box-shadow: 0 0.75rem 1.5rem #0000005b;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     a.active {
@@ -420,8 +425,8 @@ img {
     }
   }
   .card {
-    -webkit-box-shadow: 0 0.75rem 1.5rem #222222;
-    box-shadow: 0 0.75rem 1.5rem #222222;
+    -webkit-box-shadow: 0 0.75rem 1.5rem #0000005b;
+    box-shadow: 0 0.75rem 1.5rem #0000005b;
   }
   footer {
     color: #999999;
@@ -434,8 +439,8 @@ img {
   .post {
     background-color: #808080;
     color: #333333;
-    -webkit-box-shadow: 0 0.75rem 1.5rem #222222;
-    box-shadow: 0 0.75rem 1.5rem #222222;
+    -webkit-box-shadow: 0 0.75rem 1.5rem #0000005b;
+    box-shadow: 0 0.75rem 1.5rem #0000005b;
     p,
     h2,
     .date {
@@ -444,6 +449,42 @@ img {
     a {
       color: #cccccc;
     }
+  }
+  .burger {
+    span {
+      -webkit-box-shadow: 0 -4px 2px #0000005b;
+      box-shadow: 0 4px 2px #0000005b;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      span {
+        &:nth-of-type(1),
+        &:nth-of-type(3) {
+          -webkit-box-shadow: 0 -8px 4px #00000080;
+          box-shadow: 0 8px 4px #00000080;
+        }
+      }
+    }
+  }
+  .emboss {
+    text-shadow: 0 4px 2px #0000005b, 0 4px 2px #00000080;
+    color: white;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .emboss:hover {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    text-shadow: 0 8px 4px #0000005b, 0 8px 4px #00000080;
+  }
+  .slider:hover::before {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    -webkit-box-shadow: 0 -8px 4px #0000005b;
+    box-shadow: 0 8px 4px #0000005b;
   }
   .card:nth-child(4n + 1) {
     background: #808080;
@@ -538,8 +579,10 @@ input:checked + .slider:before {
 }
 
 .slider:hover::before {
-  -webkit-box-shadow: 0 -8px 4px rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 0 -8px 4px #80808042;
+  box-shadow: 0 8px 4px #80808042;
 }
 
 .slider.round:before {
@@ -583,11 +626,6 @@ footer {
 }
 */
 
-
-
-
-
-
 .burger {
   border: 0;
   padding: 0;
@@ -598,7 +636,7 @@ footer {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  
+
   span {
     display: block;
     position: absolute;
@@ -607,10 +645,10 @@ footer {
     height: 6px;
     border-radius: 30px;
     -webkit-box-shadow: 0 -4px 2px rgba(255, 255, 255, 0.06);
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.06);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    
+
     &:nth-of-type(1) {
       background-color: #ffd480;
       top: 0px;
@@ -624,17 +662,14 @@ footer {
       top: 20px;
     }
   }
-  
+
   &:hover {
     span {
       &:nth-of-type(1),
       &:nth-of-type(3) {
         -webkit-box-shadow: 0 -8px 4px rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
-      transform: scaleY(2);
+        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
       }
-      
-      
 
       &:nth-of-type(1) {
         transform: translateY(3px);
@@ -653,31 +688,22 @@ footer {
   }
 }
 
-
-
-
-
 .emboss {
   position: relative;
   display: inline-block;
   margin-left: 10px;
   margin-top: -8px;
-	font: 700 32px quicksand;
+  font: 700 32px quicksand;
   text-align: center;
-  text-shadow: 
-		0 -4px 2px rgba(255, 255, 255, 0.3),
-		0 4px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -4px 2px #ffffff4c, 0 4px 2px #00000033;
   color: BLACK;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  }
+}
 
-  .emboss:hover {
-    -webkit-transition: 0.2s ease-in-out;
+.emboss:hover {
+  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-    text-shadow: 
-0 -8px 4px rgba(255, 255, 255, 0.3),
-0 8px 4px rgba(0, 0, 0, 0.2);
-
+  text-shadow: 0 -8px 4px #ffffff4c, 0 8px 4px #00000033;
 }

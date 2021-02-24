@@ -19,16 +19,11 @@ _includes/navigation.html renders the files in the pages folder
 to add a tab add a file in _pages and add it to the navigation.html
 
 
+slider shadow
 
-
-<<<<<<< HEAD
 text size 404
-=======
 
 outline on links
-
-shadow with transparency
->>>>>>> e90783e308bcdef53966f3cda85b494117dcbf3b
 
 fine tunning screen sizes
 
@@ -65,6 +60,8 @@ try to repair progresive web app in lighthouse
 filter by songs styles or artist
 
 mobile
+
+rgbas
 
 
 
