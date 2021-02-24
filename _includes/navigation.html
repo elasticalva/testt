@@ -2,9 +2,15 @@
   <ul>
 
 
-    <li><a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.png"></a></li>
+    
 
-    <!--<li><a style="text-decoration: none;" href="{{ site.baseurl }}/" {% if page.url=="/" %}class="active" {% endif %}>Cover</a></li>•-->
+<li><a style="opacity: 1;" href="{{ site.baseurl }}/" {% if page.url=="/" %}class="active" {% endif %}><button class="burger" type="button" value="menu">
+  <span></span>
+  <span></span>
+  <span></span>
+  <p style="text-transform: capitalize; left: 40px;" class="emboss">Paper.</p>
+</button></a></li>
+  
 
     <li><a style="text-decoration: none;" href="{{ site.baseurl }}/archive" {% if page.url contains "/archive" %}class="active" {% endif
         %}>Archive</a></li>•
