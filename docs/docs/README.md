@@ -21,7 +21,14 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
+<<<<<<< HEAD
 text size 404
+=======
+
+outline on links
+
+shadow with transparency
+>>>>>>> e90783e308bcdef53966f3cda85b494117dcbf3b
 
 fine tunning screen sizes
 

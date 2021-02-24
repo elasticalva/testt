@@ -21,18 +21,11 @@ to add a tab add a file in _pages and add it to the navigation.html
 
 
 
-
-
+text size 404
 
 fine tunning screen sizes
 
-add logo to left
-
 fine tunning mobile navbar size
-
-take a look on logo dimensions when navbar minimized.
-
-when scroll passed x minimize navbar (logominimized = home, and dark mode)
 
 text size according to device
 
@@ -65,3 +58,14 @@ try to repair progresive web app in lighthouse
 filter by songs styles or artist
 
 mobile
+
+
+
+
+
+
+
+
+
+
+https://codepen.io/markmead/pen/YjQKeZ
