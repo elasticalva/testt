@@ -1,5 +1,5 @@
 site: Papermgzn
-url: "/"
+url: ""
 author: elasticalva
 author:
   name: elasticalva
@@ -21,7 +21,7 @@ social:
   
 permalink: pretty
 
-baseurl: "/"
+baseurl: ""
 
 include:
   - _redirects
@@ -50,9 +50,6 @@ collections:
   projects:
     output: true
     permalink: /beats/:slug
-  tags:
-    output: true
-    permalink: /tags/:name/
   
 defaults:
   -
