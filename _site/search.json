@@ -4,7 +4,7 @@
         "title"    : "Elektron - Octatrack MKII / Analog Four MKII",
         "category" : "",
         "tags"     : "pedito",
-        "url"      : "/testt/2020/10/10/twitter-analysis",
+        "url"      : "//2020/10/10/twitter-analysis",
         "date"     : "2020-10-10 00:00:00 +0200",
         "description" : "Coffee"
       } ,
@@ -13,7 +13,7 @@
         "title"    : "LAPD Crime Analysis",
         "category" : "",
         "tags"     : "caca",
-        "url"      : "/testt/2020/06/10/crime-analysis",
+        "url"      : "//2020/06/10/crime-analysis",
         "date"     : "2020-06-10 00:00:00 +0200",
         "description" : "Coffee"
       } ,
@@ -22,7 +22,7 @@
         "title"    : "Project example",
         "category" : "",
         "tags"     : "pedo",
-        "url"      : "/testt/2020/02/15/project-beeatch",
+        "url"      : "//2020/02/15/project-beeatch",
         "date"     : "2020-02-15 00:00:00 +0100",
         "description" : "Coffee"
       } ,
@@ -31,7 +31,7 @@
         "title"    : "Test",
         "category" : "",
         "tags"     : "css",
-        "url"      : "/testt/2020/02/13/test",
+        "url"      : "//2020/02/13/test",
         "date"     : "2020-02-13 00:00:00 +0100",
         "description" : "link to pdf"
       } ,
@@ -40,7 +40,7 @@
         "title"    : "Simply dummy text",
         "category" : "",
         "tags"     : "css",
-        "url"      : "/testt/2014/05/12/lorem-ipsum",
+        "url"      : "//2014/05/12/lorem-ipsum",
         "date"     : "2014-05-12 00:00:00 +0200",
         "description" : "Cheleando Y Batallando"
       } 
@@ -50,7 +50,7 @@
         "title"    : "",
         "category" : "",
         "tags"     : "",
-        "url"      : "/testt",
+        "url"      : "/",
         "date"     : ""
       } ,
     
@@ -58,7 +58,7 @@
         "title"    : "",
         "category" : "",
         "tags"     : "",
-        "url"      : "/testt",
+        "url"      : "/",
         "date"     : ""
       } ,
     
@@ -66,7 +66,7 @@
         "title"    : "",
         "category" : "",
         "tags"     : "",
-        "url"      : "/testt",
+        "url"      : "/",
         "date"     : ""
       } 
     
