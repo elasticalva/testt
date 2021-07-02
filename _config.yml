@@ -21,7 +21,7 @@ social:
   
 permalink: pretty
 
-baseurl: "/"
+baseurl: ""
 
 include:
   - _redirects
