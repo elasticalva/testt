@@ -4,17 +4,6 @@ title: Archive
 permalink: /archive/
 no_toc: true
 ---
-<main class="page-content" aria-label="Content">
-  <h1 style="margin-top: -60px; text-decoration: underline; font-size: 1.5rem;">What are you looking for?</h1>
-  <div class="wrapper">
-    <!-- Search Box DOM Elements -->
-    <div class="search">
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <input type="text" id="search-input" placeholder="Search">
-      <ul id="results-container"></ul>
-    </div>
-  </div>
-</main>
 <!-- Import SimpleJekyllSearch scripts by CDN -->
 <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.js"></script>
 <!-- Initialize SimpleJekyllSearch Plugin -->
@@ -30,6 +19,19 @@ no_toc: true
     exclude: ['Welcome']
   })
 </script>
+
+<main class="page-content" aria-label="Content">
+  <h1 style="margin-top: -60px; text-decoration: underline; font-size: 1.5rem;">What are you looking for?</h1>
+  <div class="wrapper">
+    <!-- Search Box DOM Elements -->
+    <div class="search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" id="search-input" placeholder="Search">
+      <ul id="results-container"></ul>
+    </div>
+  </div>
+</main>
+
 <h1 style="text-decoration: underline; font-size: 1.5rem;">Categories:</h1>
 {% assign project_tags = "" | split: ',' %}
 {% assign post_tags = "" | split: ',' %}
