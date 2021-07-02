@@ -1,5 +1,5 @@
 site: Papermgzn
-url: /testt 
+url: "https://elasticalva.github.io/"
 author: elasticalva
 author:
   name: elasticalva
@@ -21,7 +21,7 @@ social:
   
 permalink: pretty
 
-baseurl: "https://elasticalva.github.io/"
+baseurl: "/testt"
 
 include:
   - _redirects
