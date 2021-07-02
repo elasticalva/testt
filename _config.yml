@@ -50,6 +50,9 @@ collections:
   projects:
     output: true
     permalink: /beats/:slug
+  tags:
+    output: true
+    permalink: /tags/:name/
   
 defaults:
   -
