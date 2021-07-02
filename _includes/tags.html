@@ -3,7 +3,7 @@
     {%endunless %}{% endfor %}{% endcapture %}
     {% assign sortedTags = site_tags | split:',' | sort %}
     {% for tag in sortedTags %}
-    <span><a href="{{ site.baseurl }}{{ tag | cgi_escape }}">{{ tag }}</a></span>
+    <span><a href="#{{ tag | cgi_escape }}">{{ tag }}</a></span>
     {% endfor %}
 </div>
 {% for tag in sortedTags %}
